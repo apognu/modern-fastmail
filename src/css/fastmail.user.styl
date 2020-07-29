@@ -1,0 +1,33 @@
+/* ==UserStyle==
+@name           Modern Fastmail
+@namespace      github.com/apognu/modern-fastmail
+@version        1.0.0
+@description    Give a fresh look to Fastmail web interface
+@author         Antoine POPINEAU <antoine.popineau@appscho.com>
+@license        MIT License
+@preprocessor   stylus
+==/UserStyle== */
+
+@-moz-document regexp("https://.*\\.fastmail\\.com/.*") {
+  color-dark-gray = #343434
+  color-mid-gray = #525252
+  color-light-gray = #eaeaea
+  color-light-blue = #2980b9
+  color-dark-blue = #34495e
+  color-red = #e74c3c
+
+  body {
+      font-family: Roboto !important;
+      font-size: 13px !important;
+      color: color-dark-gray;
+  }
+
+  @require './misc/misc.styl';
+  @require './misc/topbar.styl';
+  @require './misc/sidebar.styl';
+
+  @require './mails/mailbox.styl';
+  @require './mails/thread.styl';
+
+  @require './notes/notes.styl';
+}

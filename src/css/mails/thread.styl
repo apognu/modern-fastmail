@@ -1,0 +1,76 @@
+.v-MessageCard {
+  position: static !important;
+  margin: 0 !important;
+  margin-bottom: 8px !important;
+  border: 1px solid color-light-gray;
+  border-radius: 2px;
+
+  &.is-collapsed {
+    .v-MessageCard-preview {
+      font-size: 1em;
+    }
+
+    &:not(.is-last) {
+      .v-MessageCard-preview {
+        display: block;
+        margin-left: 0;
+        line-height: 1.2em;
+      }
+    }
+  }
+
+  .app-avatar {
+    border-radius: 50%;
+    border-color: color-light-gray;
+  }
+
+  .v-MessageCard-from {
+    color: inherit;
+  }
+
+  .v-MessageCard-time {
+    font-size: 0.9em;
+    color: color-mid-gray;
+  }
+
+  .v-Message-body {
+    max-width: 51.25rem;
+  }
+
+  blockquote {
+    margin: 0 !important;
+    padding: 8px !important;
+    border: 0 !important;
+    border-radius: 4px !important;
+  }
+}
+
+.v-Thread {
+  max-width: none;
+
+  .v-Thread-title {
+    padding-left: 0;
+    margin-bottom: 4px;
+    font-weight: normal;
+  }
+
+  .v-ThreadLabels {
+    margin-left: 0;
+  }
+
+  .v-ThreadLabel {
+    padding: 4px;
+    border-radius: 3px;
+    font-size: 1.1em;
+
+    button {
+      background: transparent !important;
+      border: 0 !important;
+    }
+  }
+
+  .v-Toolbar {
+    background: color-light-gray;
+    border-top: 1px solid color-light-gray;
+  }
+}

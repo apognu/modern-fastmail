@@ -1,0 +1,55 @@
+if hideBetaStamp {
+  .v-Page--sidebar {
+    background-image: none;
+  }
+}
+
+.v-Sources .app-source {
+  margin-right: 8px;
+    border-radius: 0 16px 16px 0;
+}
+
+.v-Sources .app-source + .app-source-button {
+  margin-right: 8px;
+  border-radius: 0 16px 16px 0;
+    cursor: pointer;
+}
+
+.v-Sources .app-source:hover + .app-source-button {
+  background: color-light-gray !important;
+    border: 0;
+}
+
+.v-Sources .app-source + .app-source-button:hover {
+  background: transparent !important;
+}
+
+
+.v-Sources .app-source.is-selected {
+  background: color-dark-blue;
+    color: white;
+}
+
+.v-Sources .v-Icon {
+  stroke-width: 1;
+}
+
+.v-Sources .app-source.is-selected .v-Icon {
+  stroke-width: 1.5;
+  color: white !important;
+  fill: transparent !important;
+}
+
+.v-Sources .app-source.is-selected + .app-source-button {
+  background: color-dark-blue !important;
+    color: white;
+}
+
+.v-Sources .app-source.is-selected + .app-source-button:hover {
+  background: color-dark-blue !important;
+    color: white;
+}
+
+.v-Sources .app-source.is-selected + .app-source-button svg {
+  background: transparent;
+}

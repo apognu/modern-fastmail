@@ -1,0 +1,130 @@
+#mailbox {
+  .v-Empty {
+    top: 34px !important;
+    bottom: -34px !important;
+  }
+
+  .v-Page-viewOptions {
+    position: static !important;
+  }
+
+  .v-Mailbox {
+    height: auto;
+  }
+
+  .v-MailboxItem {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    display: block !important;
+    height: calc(3em + (8 * 4px)) !important;
+
+    &::after {
+      left: 0;
+      right: 0;
+    }
+
+    > * {
+      position: absolute;
+      top: auto !important;
+      left: auto !important;
+      right: auto !important;
+      bottom: auto !important;
+      margin: 0 !important;
+      padding: 0 !important;
+      width: auto !important;
+      text-align: left !important;
+    }
+
+    .v-MailboxItem-from {
+      top: 8px !important;
+      left: 64px !important;
+      right: 0 !important;
+    }
+
+    .v-MailboxItem-subject {
+      top: calc(1.5em + 6px) !important;
+      left: 64px !important;
+      right: 0 !important;
+      font-weight: 500;
+    }
+
+    .v-MailboxItem-preview {
+      top: calc(3em + (2 * 4px)) !important;
+      left: 64px !important;
+      right: 8px !important;
+      font-size: 12px;
+    }
+
+    .app-listItem-box {
+      top: 50% !important;
+      left: 16px !important;
+      transform: translateY(-50%) !important;
+    }
+
+    > div:last-child {
+      position: absolute !important;
+      top: 50% !important;
+      left: 0 !important;
+      transform: translateY(-50%) !important;
+      height: 32px !important;
+    }
+
+    svg.v-Icon {
+      margin: 0 !important;
+      width: 1.25rem !important;
+      height: 1.25rem !important;
+    }
+
+    .v-MailboxItem-time {
+      top: 8px !important;
+      right: 8px !important;
+      height: 1.2em !important;
+      text-align: right !important;
+      font-size: 0.9em;
+      color: color-mid-gray;
+    }
+
+    .v-MailboxItem-attachments {
+      top: 8px !important;
+      right: 64px !important;
+    }
+
+    .v-MailboxItem-replied {
+      top: 8px !important;
+      right: 94px !important;
+    }
+
+    .v-MailboxItem-unread {
+      top: 50% !important;
+      left: -8px !important;
+      transform: translateY(-50%);
+
+      span {
+        width: 0.925rem;
+        height: 0.825rem;
+        text-indent: 0.988rem;
+      }
+    }
+
+    .v-MailboxItem-mailboxes {
+      display: block;
+      top: calc(1.5em + 6px) !important;
+      right: 8px !important;
+    }
+
+    .v-MailboxItem-mailboxes > * {
+      display: inline-block;
+    }
+
+    .v-Icon.i-vip {
+      margin: 0 !important;
+    }
+
+    .v-ListKBFocus {
+      height: 76px !important;
+    }
+  }
+}

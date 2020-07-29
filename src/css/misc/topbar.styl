@@ -1,0 +1,67 @@
+.v-PageHeader {
+  background: white;
+}
+
+.v-MainMenu-apps {
+  a {
+    border-radius: 8px;
+    font-size: 0.9em;
+
+    &.is-selected {
+      color: color-light-blue;
+    }
+  }
+}
+
+.v-MainMenu-admin {
+    li {
+        &:first-child > a {
+          border: 0 !important;
+        }
+
+        a {
+            font-size: 0.9em;
+
+            svg {
+                width: 1.3rem !important;
+                height: 1.3rem !important;
+            }
+        }
+    }
+}
+
+.v-Toolbar {
+  padding: 0 8px;
+
+  .v-SearchText {
+      border-radius: 20px;
+
+      .v-SearchText-button {
+          border-radius: 0 20px 20px 0;
+      }
+  }
+
+  .v-PushSelect-option {
+    background: transparent;
+  }
+}
+
+.v-MainNavToolbar {
+  &:hover {
+    background: #fafafa;
+  }
+
+  .v-MainNavToolbar-avatar {
+      top: 4px;
+      bottom: 4px;
+      left: 8px;
+      right: 8px;
+      border-radius: 50%;
+      width: 2.8em;
+      height: 2.8em;
+  }
+
+  .v-MainNavToolbar-userName {
+      font-size: 0.9em;
+  }
+}

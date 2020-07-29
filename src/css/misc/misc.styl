@@ -1,0 +1,61 @@
+.v-Select-input {
+       box-shadow: none;
+   }
+
+   .v-Button {
+       cursor: pointer;
+   }
+
+  :not(.v-MenuOption):not(.v-MailboxSource):not(.v-ContactsSource) > .v-Button:not(.v-MessageCard-pinButton):not(.v-MessageCard-readButton) {
+      box-shadow: none !important;
+      background: white;
+      border: 1px solid #cacaca;
+      font-size: 12px;
+  }
+
+  .v-Button:not(.v-MessageCard-pinButton):not(.v-MessageCard-readButton):not(.v-Button--constructive):not(.v-SearchText-button):not(.app-source-button) {
+      &:hover {
+          background: color-light-gray;
+      }
+  }
+
+  .v-Button.v-Button--constructive,
+  .v-Button.v-SearchText-button {
+      background: color-light-blue !important;
+      color: white !important;
+      border-color: color-light-blue !important;
+  }
+
+  .v-Button.v-Button--destructive {
+      background: color-red !important;
+      color: white !important;
+      border-color: color-red !important;
+
+      &:hover {
+          background: color-red !important;
+          opacity: 0.9;
+      }
+  }
+
+  .v-Button.v-Button--constructive:hover,
+  .v-Button.v-SearchText-button:hover {
+      background: inherit;
+      opacity: 0.9;
+  }
+
+  .v-Button .label {
+      margin-left: 4px;
+      margin-right: 4px
+  }
+
+  .v-Button.is-disabled {
+      opacity: 0.6;
+  }
+
+  label.v-PushSelect-option {
+      background: color-light-gray;
+  }
+
+  label.v-PushSelect-option:hover {
+      background: white;
+  }
